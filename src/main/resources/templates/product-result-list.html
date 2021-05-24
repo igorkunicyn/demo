@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<!--suppress ALL -->
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<body>
+
+<h1>Products List Result</h1>
+
+<tr th:each="item: ${products}">
+    <th>id:</th>
+    <td th:text="${item.id}"/>
+    <th>title:</th>
+    <td th:text="${item.title}"/>
+    <th>cost:</th>
+    <td th:text="${item.cost}"/>
+        <br>
+</tr>
+</body>
+</html>
